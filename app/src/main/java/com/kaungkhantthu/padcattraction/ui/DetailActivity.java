@@ -61,6 +61,8 @@ public class DetailActivity extends AppCompatActivity {
         tvCityDesc = (TextView) findViewById(R.id.tv_attraction_desc);
         fab = (FloatingActionButton) findViewById(R.id.fab);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         tvCityDesc.setText(description);
         collapsingToolbar.setTitle(title);
         Glide.with(this)
